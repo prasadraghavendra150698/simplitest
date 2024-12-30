@@ -17,8 +17,8 @@ router.post(
   "/comments/:userId/:ticketId",
   [
     check("content")
-      .isLength({ min: 5 })
-      .withMessage("comment content should be atleast 5 characters"),
+      .isLength({ min: 1 })
+      .withMessage("comment content should be atleast 1 character"),
   ],
   isSignedin,
   isAuthenticated,
