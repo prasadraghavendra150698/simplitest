@@ -16,7 +16,7 @@ const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 const commentRoutes = require("./routes/comment");
 const ticketRoutes = require("./routes/ticket");
-const sendEmailRoutes = require("./routes/send_email");
+const queryRoutes = require("./routes/queries");
 
 //Middlewares
 app.use(bodyparser.json());
@@ -29,7 +29,7 @@ app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", commentRoutes);
 app.use("/api", ticketRoutes);
-app.use("/api", sendEmailRoutes);
+app.use("/api", queryRoutes);
 
 mongoose
   .connect(
