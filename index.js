@@ -10,6 +10,7 @@ const cors = require("cors");
 const multer = require("multer");
 const path = require("path");
 const app = express();
+const mongodburi = process.env.MONGODB_URI;
 
 //Routes
 const authRoutes = require("./routes/auth");
@@ -33,7 +34,7 @@ app.use("/api", queryRoutes);
 
 mongoose
   .connect(
-    mongoURI || "mongodb://localhost:27017/tax_filing",
+    mongoURI || mongodburi,
     {
       useNewUrlParser: true,
       keepAlive: 1,
