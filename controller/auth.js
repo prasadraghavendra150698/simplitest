@@ -13,7 +13,7 @@ exports.signup = async (req, res) => {
   const { email } = req.body;
   const userFound = await User.find({ email });
   console.log("USER:: ", userFound);
-  if (userFound?.length) {
+  if (userFound && userFound.length) {
     return res.status(400).json({
       error: "user already exists",
     });
