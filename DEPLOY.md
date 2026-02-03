@@ -59,6 +59,14 @@ npm run build
 
 Deploy the contents of `build/` to your static host (Vercel, Netlify, S3, etc.).
 
+### 4. Vercel (frontend only – recommended)
+
+This repo has a **root** `vercel.json` so Vercel deploys **only the React app** (`Simplicon_frontend`), not the Express backend. That avoids **500 FUNCTION_INVOCATION_FAILED**: the backend is a long‑running server (MongoDB, Express) and is not suitable as a Vercel serverless function.
+
+- **Root Directory:** `vercel.json` sets `rootDirectory: "Simplicon_frontend"`. If you already set Root Directory in the Vercel dashboard, it should match.
+- **Env:** In Vercel project → Settings → Environment Variables, add `REACT_APP_API_URL` = your **backend API URL** (e.g. `https://your-backend.railway.app/api` or wherever the Node API is hosted).
+- **Backend:** Host the Node/Express API elsewhere (Railway, Render, Heroku, etc.) and set `REACT_APP_API_URL` to that URL.
+
 ### 3. Same-domain option
 
 If you serve the React app and the Node app from the same domain (e.g. Node serves both API and static build):
