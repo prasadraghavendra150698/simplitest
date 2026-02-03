@@ -1,0 +1,117 @@
+[
+  {
+    "ID": 1,
+    "Service": "State Tax Return Filing",
+    "Price": "59.99"
+  },
+  {
+    "ID": 2,
+    "Service": "Local / City Tax Return",
+    "Price": "29.99"
+  },
+  {
+    "ID": 3,
+    "Service": "Schedule C",
+    "Price": "79.99"
+  },
+  {
+    "ID": 4,
+    "Service": "Schedule D (Charges apply for every additional page)",
+    "Price": "29.99"
+  },
+  {
+    "ID": 5,
+    "Service": "Schedule E: Each Additional Property Costs $19.99",
+    "Price": "49.99"
+  },
+  {
+    "ID": 6,
+    "Service": "Election Charges (Sec 6013'g' & 'h' election)",
+    "Price": "79.99"
+  },
+  {
+    "ID": 7,
+    "Service": "ITIN (W7 Form)",
+    "Price": "75.99"
+  },
+  {
+    "ID": 8,
+    "Service": "COA - Each Certificate of Accuracy for ITIN",
+    "Price": "149.99"
+  },
+  {
+    "ID": 9,
+    "Service": "FBAR",
+    "Price": "29.99"
+  },
+  {
+    "ID": 10,
+    "Service": "FATCA - 8938",
+    "Price": "39.99"
+  },
+  {
+    "ID": 11,
+    "Service": "State Itemized Deductions",
+    "Price": "29.99"
+  },
+  {
+    "ID": 12,
+    "Service": "Extension filing",
+    "Price": "19.99"
+  },
+  {
+    "ID": 13,
+    "Service": "Form 8949 (Crypto)  per page",
+    "Price": "9.99"
+  },
+  {
+    "ID": 14,
+    "Service": "Form 1116 ",
+    "Price": "24.99"
+  },
+  {
+    "ID": 15,
+    "Service": "Form K1's",
+    "Price": "44.99"
+  },
+  {
+    "ID": 16,
+    "Service": "Sale of Property ",
+    "Price": "79.99"
+  },
+  {
+    "ID": 17,
+    "Service": "Form 8843",
+    "Price": "49.99"
+  },
+  {
+    "ID": 18,
+    "Service": "Form 8621 PFIC (for each fund)",
+    "Price": "99.99"
+  },
+  {
+    "ID": 19,
+    "Service": "Indian Tax Return Filing",
+    "Price": "44.99"
+  },
+  {
+    "ID": 20,
+    "Service": "international tax forms ,5471,5472,8858,8865,8804,8805",
+    "Price": "149.99"
+  },
+  {
+    "ID": 21,
+    "Service": "Business Forms-1120,1120-S,1065,990(Starts from $250)",
+    "Price": "249.99"
+  },
+  {
+    "ID": 22,
+    "Service": "Accounting and Bookkeeping services(Starts from $149.99)",
+    "Price": "149.99"
+  },
+  {
+    "ID": 23,
+    "Service": "Federal Tax Return Filing (Form 1040)",
+    "Price": "69.99"
+  }
+]

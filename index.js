@@ -23,7 +23,12 @@ const queryRoutes = require("./routes/queries");
 app.use(bodyparser.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(cookieparser());
-app.use(cors());
+// CORS: allow frontend origin in production via env, or allow all in dev
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || true, // true = reflect request origin (dev)
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 //Routes Middlewares
 app.use("/api", authRoutes);
